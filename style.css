@@ -33,9 +33,10 @@ header {
 
 
 form {
-  width: 50%;
-  margin: 10% auto;
-  min-width: 9rem;
+    width: 50%;
+    margin: 10% auto;
+    min-width: 9rem;
+    position: relative;
 }
 
 input, textarea {
