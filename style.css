@@ -1,26 +1,17 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    flex-direction: column;
-}
-
-a {
-    text-decoration: none;
 }
 
 header {
-    background-color: #6699CC;
+    background-color: #4CAF50;
     color: white;
     padding: 20px;
 }
 
-.about, .projects {
+.about, .projects, .contact {
     margin: 20px;
     padding: 20px;
     background: #f4f4f4;
@@ -34,76 +25,42 @@ header {
     border-radius: 5px;
 }
 
-
-
-form {
+.contact form {
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    margin: 10% auto;
-    min-width: 9rem;
-    position: relative;
+    margin: 0 auto;
 }
 
-input, textarea {
-    float: left;
+.contact label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-top: 5px;
     width: 100%;
-    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
     border: none;
-    margin: 0.5rem 0;
-    padding: 0.5rem 1rem;
-    border-radius: 0.3rem;
-    background: darken(#f9f9f9, 10%);
-    color: darken(#f9f9f9, 50%);
-
-    &[type=submit] {
-        background: $green;
-        color: #fff;
-        width: auto;
-        float: right;
-    }
-    &::placeholder {
-        color: darken(#f9f9f9, 50%);
-    }
-    &.error {
-        background: $red;
-        color: #fff;
-        &::placeholder {
-            color: darken($red, 60%);
-        }
-    }
+    border-radius: 5px;
+    cursor: pointer;
 }
-  
 
-textarea {
-  height: 10rem;
-}
-.captcha {
-  float:left;
-  input {
-    float: right;
-  }
-  input[name=question] {
-    width: 4rem;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    text-align: right;
-    padding-right: 0;
-  }
-  [name=captcha] {
-    width: 5rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding-left: 0.5rem;
-    &::placeholder {
-      text-align: center;
-    }
-  }
+.contact button:hover {
+    background: #45a049;
 }
 
 footer {
     background-color: #222;
     color: white;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
