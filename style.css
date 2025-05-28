@@ -5,6 +5,10 @@ body {
     text-align: center;
 }
 
+a:hover {
+    text-decoration:underline;
+}
+
 header {
     background-color: #6699CC;
     color: white;
