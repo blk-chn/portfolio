@@ -30,11 +30,7 @@ header {
     border-radius: 5px;
 }
 
-footer {
-    background-color: #222;
-    color: white;
-    padding: 10px;
-}
+
 
 form {
   width: 50%;
@@ -107,4 +103,13 @@ textarea {
   font-style: normal;
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
