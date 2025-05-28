@@ -105,6 +105,10 @@ textarea {
   src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
 
+.contactform {
+    padding-bottom: 50px;
+}
+
 footer {
     background-color: #222;
     color: white;
