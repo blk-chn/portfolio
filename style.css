@@ -33,6 +33,13 @@ header {
     border-radius: 5px;
 }
 
+.card {
+    position: relative;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
 .contact form {
     display: flex;
     flex-direction: column;
