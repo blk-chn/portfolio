@@ -34,13 +34,30 @@ header {
 }
 
 .card {
-    position: relative;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 .card img {
     width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h4 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
 }
 
 .contact form {
